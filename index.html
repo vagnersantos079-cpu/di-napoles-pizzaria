@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Di Nápoles Pizzaria</title>
+<meta name="description" content="Di Nápoles Pizzaria — pizzas tradicionais, especiais, doces, esfirras e bebidas.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#faf7f0;color:#211d18}
+:root{--red:#b51f24;--green:#16834b;--dark:#151515;--cream:#fffaf0}
+header{background:#111;color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 18px #0003}
+.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+.logo{font-weight:900;font-size:22px;letter-spacing:1px}.logo span{display:block;font-size:10px;letter-spacing:5px;text-align:center;color:#ddd}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:700;font-size:14px}
+.hero{background:linear-gradient(135deg,#171717 0%,#2a1610 55%,#b51f24 150%);color:white;padding:64px 20px;text-align:center}
+.hero h1{font-size:clamp(42px,8vw,76px);margin:0 0 8px}.hero p{font-size:18px;color:#eee;margin:0 auto 25px;max-width:650px}
+.btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;border:0;border-radius:999px;padding:14px 24px;font-weight:800;cursor:pointer;box-shadow:0 8px 20px #0003}
+.flag{width:100px;height:7px;margin:18px auto;background:linear-gradient(90deg,var(--green) 0 33%,#fff 33% 66%,var(--red) 66%)}
+.wrap{max-width:1100px;margin:auto;padding:38px 18px}.section-title{text-align:center;margin:10px 0 28px;font-size:30px}.section-title:after{content:"";display:block;width:55px;height:4px;background:var(--red);margin:10px auto;border-radius:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}.card{background:white;border-radius:18px;padding:18px;box-shadow:0 5px 20px #0000000d;border:1px solid #eee}.card h3{margin:0 0 7px}.item{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid #eee}.item:last-child{border-bottom:0}.price{font-weight:900;white-space:nowrap;color:var(--red)}
+.badge{display:inline-block;background:#f7e5df;color:var(--red);font-size:11px;padding:5px 8px;border-radius:99px;font-weight:800;margin-bottom:8px}
+.order{position:fixed;right:18px;bottom:18px;background:#16834b;color:white;padding:14px 18px;border-radius:999px;text-decoration:none;font-weight:900;z-index:20;box-shadow:0 8px 25px #0004}
+footer{background:#111;color:#ddd;text-align:center;padding:30px 18px;margin-top:25px}footer b{color:#fff}
+@media(max-width:650px){nav a{display:none}.hero{padding:50px 18px}.card{padding:15px}.wrap{padding-top:28px}}
+</style></head>
+<body>
+<header><div class="nav"><div class="logo">DI NÁPOLES<span>P I Z Z A R I A</span></div><nav><a href="#pizzas">Pizzas</a><a href="#esfirras">Esfirras</a><a href="#bebidas">Bebidas</a></nav></div></header>
+<section class="hero"><div class="flag"></div><h1>Di Nápoles</h1><p>Pizza artesanal, sabores especiais e aquela sobremesa para fechar o pedido.</p><a class="btn" href="#pizzas">Ver cardápio</a></section>
+
+<main class="wrap" id="pizzas">
+<h2 class="section-title">Pizzas Tradicionais</h2>
+<div class="grid">
+<div class="card"><span class="badge">TRADICIONAIS</span>
+<div class="item"><b>A Moda do Chef</b><span class="price">G 69,99 · B 54,99</span></div>
+<div class="item"><b>Alho Poró</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>Atum</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>Atum c/ Mussarela</b><span class="price">G 59,99 · B 44,99</span></div>
+<div class="item"><b>Atum Especial</b><span class="price">G 69,99 · B 54,99</span></div>
+<div class="item"><b>Baiana</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>Bacon</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>Bauru</b><span class="price">G 49,99 · B 34,99</span></div>
+<div class="item"><b>Brócolis</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>Calabresa</b><span class="price">G 49,99 · B 34,99</span></div>
+<div class="item"><b>Calabresa c/ Mussarela</b><span class="price">G 49,99 · B 39,99</span></div>
+<div class="item"><b>Calabresa Especial</b><span class="price">G 59,99 · B 44,99</span></div>
+<div class="item"><b>Escolara</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>Frango c/ Cheddar</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>Frango c/ Catupiry</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>Frango Especial</b><span class="price">G 59,99 · B 44,99</span></div>
+<div class="item"><b>Frango c/ Mussarela</b><span class="price">G 59,99 · B 44,99</span></div>
+<div class="item"><b>Lombo</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>Marguerita</b><span class="price">G 49,99 · B 34,99</span></div>
+<div class="item"><b>Milho</b><span class="price">G 49,99 · B 34,99</span></div>
+<div class="item"><b>Mussarela</b><span class="price">G 49,99 · B 34,99</span></div>
+<div class="item"><b>Palmito</b><span class="price">G 49,99 · B 34,99</span></div>
+<div class="item"><b>Peperoni</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>Portuguesa</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>4 Queijos</b><span class="price">G 54,99 · B 39,99</span></div>
+<div class="item"><b>5 Queijos</b><span class="price">G 59,99 · B 44,99</span></div>
+</div>
+<div class="card"><span class="badge">ESPECIAIS</span>
+<div class="item"><b>Batatinhas Frita</b><span class="price">G 59,99 · B 44,99</span></div>
+<div class="item"><b>Carne Seca</b><span class="price">G 59,99 · B 44,99</span></div>
+<div class="item"><b>Costela</b><span class="price">G 74,99 · B 59,99</span></div>
+<div class="item"><b>Costela c/ Barbecue</b><span class="price">G 79,99 · B 64,99</span></div>
+<div class="item"><b>Estrogonofe de Frango</b><span class="price">G 74,99 · B 59,99</span></div>
+<div class="item"><b>Estrogonofe de Fraldinha</b><span class="price">G 79,99 · B 64,99</span></div>
+<div class="item"><b>Fraldinha Especial</b><span class="price">G 79,99 · B 64,99</span></div>
+</div></div>
+
+<h2 class="section-title">Pizzas Doces</h2><div class="grid"><div class="card">
+<div class="item"><b>Brigadeiro</b><span class="price">G 49,99 · B 34,99</span></div><div class="item"><b>Banoffe</b><span class="price">G 54,99 · B 39,99</span></div><div class="item"><b>Di Minas</b><span class="price">G 44,99 · B 29,99</span></div><div class="item"><b>Di Nutella</b><span class="price">G 54,99 · B 39,99</span></div><div class="item"><b>Dose Dupla</b><span class="price">G 49,99 · B 34,99</span></div><div class="item"><b>Prestígio</b><span class="price">G 49,99 · B 34,99</span></div><div class="item"><b>Sensação</b><span class="price">G 54,99 · B 39,99</span></div><div class="item"><b>Paçoquinha</b><span class="price">G 44,99 · B 29,99</span></div><div class="item"><b>Romeu e Julieta</b><span class="price">G 44,99 · B 29,99</span></div><div class="item"><b>MMS</b><span class="price">G 59,99 · B 44,99</span></div>
+</div></div>
+
+<h2 class="section-title" id="esfirras">Esfirras</h2><div class="grid">
+<div class="card"><h3>Esfirras Abertas Salgadas</h3><div class="item"><b>Calabresa</b><span class="price">R$ 10,00</span></div><div class="item"><b>Calabresa c/ Catupiry</b><span class="price">R$ 10,00</span></div><div class="item"><b>Alho Poró</b><span class="price">R$ 10,00</span></div><div class="item"><b>Bacon</b><span class="price">R$ 10,00</span></div><div class="item"><b>2 Queijos</b><span class="price">R$ 10,00</span></div><div class="item"><b>Brócolis</b><span class="price">R$ 10,00</span></div><div class="item"><b>Palmito</b><span class="price">R$ 10,00</span></div><div class="item"><b>Frango c/ Catupiry</b><span class="price">R$ 10,00</span></div></div>
+<div class="card"><h3>Esfirras Abertas Doces</h3><div class="item"><b>Brigadeiro</b><span class="price">R$ 11,00</span></div><div class="item"><b>Banoffe</b><span class="price">R$ 11,00</span></div><div class="item"><b>Mineirinha</b><span class="price">R$ 11,00</span></div><div class="item"><b>MMS</b><span class="price">R$ 12,00</span></div><div class="item"><b>Nutella</b><span class="price">R$ 11,00</span></div><div class="item"><b>Sensação</b><span class="price">R$ 12,00</span></div></div></div>
+
+<h2 class="section-title">Bordas Recheadas & Adicionais</h2><div class="grid">
+<div class="card"><h3>Bordas</h3><div class="item"><b>Catupiry</b><span class="price">R$ 13,00</span></div><div class="item"><b>Cheddar</b><span class="price">R$ 14,00</span></div><div class="item"><b>Mussarela</b><span class="price">R$ 14,00</span></div><div class="item"><b>Vulcão</b><span class="price">R$ 18,00</span></div><div class="item"><b>Caracol</b><span class="price">R$ 18,00</span></div><div class="item"><b>Pãozinho</b><span class="price">R$ 18,00</span></div><div class="item"><b>Chocolate</b><span class="price">R$ 18,00</span></div></div>
+<div class="card"><h3>Adicionais</h3><div class="item"><b>Bacon</b><span class="price">R$ 6,00</span></div><div class="item"><b>Catupiry</b><span class="price">R$ 6,00</span></div><div class="item"><b>Cheddar</b><span class="price">R$ 6,00</span></div><div class="item"><b>Mussarela</b><span class="price">R$ 6,00</span></div></div></div>
+
+<h2 class="section-title" id="bebidas">Bebidas</h2><div class="grid"><div class="card"><div class="item"><b>Del Valle 1,5L</b><span class="price">R$ 9,00</span></div><div class="item"><b>Coca-Cola 2L</b><span class="price">R$ 16,90</span></div><div class="item"><b>Sprite 2L</b><span class="price">R$ 14,00</span></div><div class="item"><b>Fanta 2L</b><span class="price">R$ 14,00</span></div><div class="item"><b>Kuat 2L</b><span class="price">R$ 10,00</span></div><div class="item"><b>Refrigerante Lata (Diversos)</b><span class="price">R$ 6,00</span></div><div class="item"><b>Água c/ Gás 500ml</b><span class="price">R$ 4,00</span></div><div class="item"><b>Água s/ Gás 500ml</b><span class="price">R$ 2,50</span></div></div></div>
+</main>
+<a class="order" href="https://wa.me/" target="_blank">🛵 Pedir pelo WhatsApp</a>
+<footer><b>DI NÁPOLES PIZZARIA</b><br><br>Cardápio digital • Feito para facilitar seu pedido</footer>
+</body></html>
